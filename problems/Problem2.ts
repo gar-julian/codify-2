@@ -3,9 +3,10 @@ import { Student } from "../types";
 
 // Function that returns an array of students given names and ages
 export function arrayOfStudents(names: string[], ages: number[]): Student[] {
-    // TODO: Implement logic to create an array of Student objects
-    return []; // Placeholder return statement
+    return names.map((name, i) => ({name, age: ages[i]})) 
 }
+
+export default arrayOfStudents
 
 // Example
 // arrayOfStudents(names, ages));
